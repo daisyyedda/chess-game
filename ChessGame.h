@@ -11,11 +11,11 @@ private:
     Player* currentPlayer;
 
 public:
-    ChessGame(const Player& player1, const Player& player2): player1(player1), player2(player2) {}
-    // game rules, player turns, etc
-    void startGame() {
-
+    ChessGame(Player& whitePlayer, Player& blackPlayer): whitePlayer(whitePlayer), blackPlayer(blackPlayer) {
+        currentPlayer = &whitePlayer;
     }
+    void startGame();
+    void initializePieces();
 };
 
 

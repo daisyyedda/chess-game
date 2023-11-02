@@ -4,8 +4,11 @@
 #include "Enum.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    ChessGame game((Player(Color::WHITE)), Player(Color::BLACK));
+    std::cout << "Welcome to Chess Game!" << std::endl;
+    Player player1(Color::WHITE);
+    Player player2(Color::BLACK);
+    ChessGame game(player1, player2);
+
     game.startGame();
     return 0;
 }

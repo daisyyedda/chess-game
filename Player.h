@@ -11,7 +11,7 @@ class Player {
 private:
     Color color;
 public:
-    Player(Color color): color(color) {}
+    explicit Player(Color color): color(color) {}
     Color getColor() const { return color; }
 };
 
