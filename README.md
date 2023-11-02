@@ -1,2 +1,2 @@
 # chess-game
-brush up my OOP skills for interview prep
+brush up my OOD skills for interview prep
